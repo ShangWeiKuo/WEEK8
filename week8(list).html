@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>活動報名表單</title>
+	<style>
+		fieldset {border-color: orange}
+		legend,p {font-weight: bold}
+		img {float: left; margin: 10px; height: 240px}
+		.img_site1 {float: right; width:650px; height:120px !important}
+		.img_site2 {float: left; height:90px !important}
+		.align_top {vertical-align: top}
+		.sign_top {vertical-align: top}
+		.align_center {text-align:center; font-size:50px; font-weight:bold; font-family: DFKai-sb; padding-top: 30px}
+		.button-center {text-align:center; font-size:30px; font-weight:bold; font-family: DFKai-sb}
+		.location-center {text-align: center}
+		.align_left {text-align: left}
+		.align_right {text-align: right}
+		.marword {font-weight: bold; font-family: DFKai-sb}
+	</style>
+</head>
+<body>
+	<a href="http://www.nuk.edu.tw/bin/home.php" target="new">
+		<img class="img_site2" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZVlho-B0v6R8_sbYdoclKP8xFnDfQ3a01W8tAnAhKekx0aHmXQw">
+	</a>
+
+	<div class="align_center" style="color:silver">
+		國立高雄大學卡打車公益比賽
+	</div>
+	<br>
+	<br>
+
+	<marquee behavior="alternative" bgcolor="#00FF00" direction="left" scrollamount="10" class="marword">
+		歡迎各位於3/25(日)蒞臨國立高雄大學運動大會
+	</marquee>
+	<br>
+	<br>
+	
+	<img src="http://images.clipartlogo.com/files/images/44/444620/road-cycling-sports-pictogram-olympic_t.jpg">
+
+	<form action="homework4(database for list).php" method="post">
+		<fieldset>
+			<legend>
+				基本資料 (
+				<font color="red">*</font>
+				為必填欄位)
+			</legend>
+			
+			<a href="http://www.nuk.edu.tw/bin/home.php" target="new">
+				<img class="img_site1" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-D-2I6-qyT9LUXa-QneAZ946rkGU4mcQdz-dvQ3uAVbO2kgBJ">
+			</a>
+
+			<font color="red">*</font>姓名: <input type="text" name="uname" required><br>
+
+			<font color="red">*</font>性別: <input type="radio" name="ugender" value="Male">男
+			<input type="radio" name="ugender" value="Female">女
+			<br>
+
+			<span class="align_top"><font color="red" class="sign_top">*</font>聯絡地址:</span>
+			<textarea name="addr" cols="40" rows="2" required></textarea>
+			<br>
+
+			<font color="red">*</font>E-Mail: 
+			&nbsp;
+			&nbsp;
+			<input type="email" name="uemail" required> (也可填G-Mail)<br>
+
+			<font color="red">*</font>連絡電話: <input type="tel" name="tel" required>
+
+		</fieldset>
+		<br>
+		
+		<fieldset>
+			<legend>參加項目</legend>
+				<input type="radio" name="length" value="7"> 7KM (2017/03/01)<br>
+				<input type="radio" name="length" value="15"> 15KM (2017/03/10)<br>
+				<input type="radio" name="length" value="23"> 23KM (2017/03/25)<br>
+		</fieldset>
+
+		<p>選擇活動 T-Shirt(紀念衫) 贈品尺寸
+			<select name="utshirt-size">
+				<option>XXL</option>
+				<option>XL</option>
+				<option>L</option>
+				<option>M</option>
+				<option>S</option>
+			</select>
+		</p>
+
+		<fieldset>
+			<legend>緊急聯絡人</legend>
+				緊急聯絡人姓名: <input type="text" name="fname"><br>
+				緊急聯絡人電話: <input type="tel" name="ftel">
+		</fieldset>
+		<br>
+
+		<fieldset>
+			<legend>報名須知</legend>
+				<ol>
+					<li>需自行準備腳踏車。</li>
+					<li>請務必記得戴上安全帽。</li>
+					<li>本活動共有三場，分別於03/01、03/10，以及03/25舉辦。</li>
+					<li>承第3點，此三場分別進行7KM、15KM，以及23KM賽事。</li>
+					<li>請於上午6:00至高雄大學正門口集合。</li>
+					<li>為確保選手不會臨時脫水，請隨身帶一瓶水。</li>
+					<li>參與本活動者，請自行衡量身體狀況再參賽。</li>
+				</ol>
+		</fieldset>
+		<br>
+
+		<input type="checkbox" name="other">要收到本活動單位的其它活動訊息。
+		<br>
+		<br>
+
+		<div class="location-center">
+			<input type="submit" class="button-center">
+			<input type="reset"  class="button-center">
+		</div>
+	</form>
+</body>
+</html>
